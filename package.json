@@ -1,0 +1,18 @@
+{
+  "name": "bankeaseroot",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix frontend\""
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "concurrently": "^9.1.2"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "mongodb": "^6.16.0",
+    "vite": "^6.3.3",
+    "xss": "^1.0.15"
+  }
+}

@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ Global tweaks for non-Tailwind HTML elements */
+body {
+  background-color: #FAF3E0; /* Creamy beige */
+  color: #1F2937; /* Tailwind's gray-800 */
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+/* Optional: remove default focus ring on buttons */
+button:focus {
+  outline: none;
+}
+
+#logout-button:focus {
+  outline: none;
+}
+#logout-button:hover{
+  text-decoration: underline;
+}
+#logout-button{
+  font-size: 1rem;
+  padding-left: 0rem;
+  color: white;
+}
+
+/* Optional: make links prettier */
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
