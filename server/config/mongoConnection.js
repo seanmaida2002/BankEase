@@ -1,6 +1,8 @@
 import { MongoClient, ServerApiVersion } from 'mongodb';
 import {mongoConfig} from './settings.js';
-const uri = "mongodb+srv://smaida:bankease$2025@bankease.vup5n6q.mongodb.net/?retryWrites=true&w=majority&appName=BankEase";
+import * as dotenv from "dotenv";
+dotenv.config();
+const uri = process.env.URI;
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
   serverApi: {
